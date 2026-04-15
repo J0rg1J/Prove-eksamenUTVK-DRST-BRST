@@ -1,3 +1,7 @@
+const supabaseUrl = "https://uuhrbjyitxdbtveijjzi.supabase.co";
+const supabaseKey =
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InV1aHJianlpdHhkYnR2ZWlqanppIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzYyMjE5NzcsImV4cCI6MjA5MTc5Nzk3N30.FIQYhtylQ0xVga4SNxNnQkoY25jf0Ax683Mt0M4097E";
+
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("contactForm");
   const message = document.getElementById("message");
