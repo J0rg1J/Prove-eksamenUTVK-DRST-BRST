@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const supabaseUrl = "https://uuhrbjyitxdbtveijjzi.supabase.co";
-  const supabaseKey = "DIN_ANON_KEY_HER"; // behold din egen
+  const supabaseKey =
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InV1aHJianlpdHhkYnR2ZWlqanppIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3NjIyMTk3NywiZXhwIjoyMDkxNzk3OTc3fQ.TIWJzqKfCqrvFnPyiUlwLXnqLgzu4AUTKXcPZhaOr20";
 
   const supabaseClient = supabase.createClient(supabaseUrl, supabaseKey);
 
