@@ -3,29 +3,24 @@ console.log("script.js er lastet");
 document.addEventListener("DOMContentLoaded", function () {
   console.log("DOMContentLoaded kjørte");
 
-  const form = document.getElementById("contactForm");
-  console.log("Fant form:", form);
-
-  if (form) {
-    form.addEventListener("submit", function (e) {
-      e.preventDefault();
-      console.log("Submit ble trykket");
-    });
-  }
-});
-
-document.addEventListener("DOMContentLoaded", function () {
   const supabaseUrl = "https://uuhrbjyitxdbtveijjzi.supabase.co";
-  const supabaseKey =
-    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InV1aHJianlpdHhkYnR2ZWlqanppIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3NjIyMTk3NywiZXhwIjoyMDkxNzk3OTc3fQ.TIWJzqKfCqrvFnPyiUlwLXnqLgzu4AUTKXcPZhaOr20";
+  const supabaseKey = "LIM_INN_ANON_KEY_HER";
 
   const supabaseClient = supabase.createClient(supabaseUrl, supabaseKey);
 
   const form = document.getElementById("contactForm");
   const message = document.getElementById("message");
 
+  console.log("Fant form:", form);
+
+  if (!form) {
+    console.log("Fant ikke skjemaet");
+    return;
+  }
+
   form.addEventListener("submit", async function (e) {
     e.preventDefault();
+    console.log("Submit ble trykket");
 
     const navn = document.getElementById("name").value.trim();
     const epost = document.getElementById("email").value.trim();
@@ -53,7 +48,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     message.textContent = `Takk for henvendelsen, ${navn}!`;
     message.className = "mt-3 text-success";
-
     form.reset();
   });
 });
