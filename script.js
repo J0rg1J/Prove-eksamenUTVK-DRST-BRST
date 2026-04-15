@@ -1,3 +1,19 @@
+console.log("script.js er lastet");
+
+document.addEventListener("DOMContentLoaded", function () {
+  console.log("DOMContentLoaded kjørte");
+
+  const form = document.getElementById("contactForm");
+  console.log("Fant form:", form);
+
+  if (form) {
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      console.log("Submit ble trykket");
+    });
+  }
+});
+
 document.addEventListener("DOMContentLoaded", function () {
   const supabaseUrl = "https://uuhrbjyitxdbtveijjzi.supabase.co";
   const supabaseKey =
