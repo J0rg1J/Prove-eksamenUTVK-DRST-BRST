@@ -1,1 +1,1 @@
-må ha readme for å poste til.
+må ha readme fil for å bruke github.

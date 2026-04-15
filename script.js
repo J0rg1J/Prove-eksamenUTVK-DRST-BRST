@@ -1,5 +1,3 @@
-// Håndterer kontaktskjema, validering og lagring av henvendelser i Supabase.
-
 document.addEventListener("DOMContentLoaded", function () {
   const supabaseUrl = "https://uuhrbjyitxdbtveijjzi.supabase.co";
   const supabaseKey =
